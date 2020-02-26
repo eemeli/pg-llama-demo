@@ -9,3 +9,12 @@ services:
       - '5432'
     volumes:
       - ./initdb:/docker-entrypoint-initdb.d:ro
+
+  server:
+    image: graphile/postgraphile:latest
+    depends_on:
+      - data
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./postgraphilerc.js:/postgraphile/.postgraphilerc.js:ro
