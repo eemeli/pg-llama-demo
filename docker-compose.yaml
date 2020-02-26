@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  data:
+    image: postgres:latest
+    expose:
+      - '5432'
