@@ -1,6 +1,6 @@
 module.exports = {
   options: {
-    connection: 'postgres://postgres@data/postgres',
+    connection: 'postgres://graphql@data/postgres',
     enhanceGraphiql: true,
     host: 'server',
     retryOnInitFail: true
